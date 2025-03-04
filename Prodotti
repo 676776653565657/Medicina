@@ -1,0 +1,34 @@
+# Classe base "Prodotto"
+class Prodotto:
+    def __init__(self, nome, prezzo):
+        self.nome = nome
+        self.prezzo = prezzo
+
+    def __str__(self):
+        return f"{self.nome} - {self.prezzo}€"
+
+# Sottoclasse "Medicina"
+class Medicina(Prodotto):
+    def __init__(self, nome, prezzo, provenienza):
+        super().__init__(nome, prezzo)
+        self.provenienza = provenienza
+
+    def __str__(self):
+        return f"{self.nome} (Medicina) - {self.prezzo}€ - Provenienza: {self.provenienza}"
+
+# Sottoclasse "Tosse-secca"
+class Tosse-secca(Prodotto):
+    def __init__(self, nome, prezzo, tipo):
+        super().__init__(nome, prezzo)
+        self.tipo = tipo
+
+    def __str__(self):
+        return f"{self.nome} (Verdura) - {self.prezzo}€ - Tipo: {self.tipo}"
+
+# Creazione di istanze dei prodotti
+prodotto1 = Medicina("nurofen", 11.50, "Italia")
+prodotto2 = Tosse-secca("Fluifort", 10.80, "italia")
+
+# Stampa dei prodotti
+print(prodotto1)
+print(prodotto2)
