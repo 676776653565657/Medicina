@@ -23,7 +23,7 @@ class Tosse-secca(Prodotto):
         self.tipo = tipo
 
     def __str__(self):
-        return f"{self.nome} (Verdura) - {self.prezzo}€ - Tipo: {self.tipo}"
+        return f"{self.nome} (Medicina) - {self.prezzo}€ - Tipo: {self.tipo}"
 
 # Creazione di istanze dei prodotti
 prodotto1 = Medicina("nurofen", 11.50, "Italia")
